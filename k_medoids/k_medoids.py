@@ -67,15 +67,4 @@ class K_medoids:
             index = distances.index(min_dist)
             predictions.append(index)
             
-        return predictions
-
-
-if __name__ == "__main__":
-    
-    clf = K_medoids(3)
-    X = np.array([[1, 2], [1.5, 1.8], [5, 8], [8, 8], [1, 0.6], [9, 11], [10000, 10000]])
-    clf.fit(X)
-    
-    print clf.predict([[1,2],[2,5]])
-
-        
+        return predictions        
