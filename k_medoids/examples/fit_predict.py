@@ -8,3 +8,4 @@ clf.fit(X)
 prediction = clf.predict([[1,1],[2,3],[0.5,2]])
 
 print("Prediction is: {0}".format(prediction))
+ 
