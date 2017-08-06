@@ -68,3 +68,4 @@ class K_medoids:
             predictions.append(index)
             
         return predictions        
+     
