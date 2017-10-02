@@ -21,8 +21,7 @@ class K_medoids:
     
     def __init__(self,n_clusters=2,max_iters=100):
         
-        if n_clusters < 2:
-            raise ValueError("Value of 'n_clusters' cannot be less than 2")
+	assert (n_clusters >= 2), "Value of 'n_clusters' cannot be less than 2"
         self.k = n_clusters
         self.max_iters = max_iters
         self._fit = False
