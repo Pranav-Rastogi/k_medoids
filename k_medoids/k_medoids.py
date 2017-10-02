@@ -57,8 +57,7 @@ class K_medoids:
                 
                 
     def predict(self, data):
-        if self._fit == False:
-            raise RuntimeError('a program call to fit() must be given before calling predict()')
+	assert self._fit, "a program call to fit() must be given before calling predict()"
             
         predictions = []
         for point in data:
